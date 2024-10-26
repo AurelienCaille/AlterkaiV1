@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<catalogue id="5cec-0431-b6d6-fddd" name="Lost Children" revision="2" battleScribeVersion="2.03" library="false" gameSystemId="7c09-cc6c-a0b3-db0b" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <selectionEntries>
+    <selectionEntry id="99f1-2a42-bd86-2b8e" name="Lost Soldier Squad" hidden="false" collective="false" import="true" type="unit">
+      <rules>
+        <rule id="87a4-2cd5-c012-57cc" name="Lost Soldier Squad" hidden="false">
+          <description>Etude des reliques:
+Si l’unité est à 6” d’un objectif, gagner 1 point de rituel supplémentaire au début du tour</description>
+        </rule>
+        <rule id="2081-5509-4875-3c75" name="Lost Soldier Squad" hidden="false">
+          <description>Conscience protectrice:
+La conscience de chaque oublié a été transmise dans son armure, rendant leur corps plus résistant aux faibles attaques.
+Un fois par tour, Vous pouvez relancer jusqu’à 3 sauvegardes ratées contre une attaque dommage 1
+</description>
+        </rule>
+      </rules>
+      <entryLinks>
+        <entryLink id="10a4-5fee-833d-7740" name="Lost Soldier" hidden="false" collective="false" import="true" targetId="f5f0-b374-eb38-5684" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="9.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ef0f-b12f-840a-7f3d" type="max"/>
+            <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c913-004a-9fa0-0ece" type="min"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+    </selectionEntry>
+  </selectionEntries>
+  <sharedSelectionEntries>
+    <selectionEntry id="b56a-e469-0980-ab3c" name="Warp Gun" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="1129-c42a-5efd-2b72" name="Warp Gun" hidden="false" typeId="9dca-df4d-90ea-88cb" typeName="Ranged Weapons">
+          <characteristics>
+            <characteristic name="Range" typeId="5db7-a574-7d62-7037">24&quot;</characteristic>
+            <characteristic name="A" typeId="ae6d-f386-4c1f-d2c8">1</characteristic>
+            <characteristic name="S" typeId="3a26-54c6-47d7-3299">4</characteristic>
+            <characteristic name="PA" typeId="a68d-f417-7582-813a">1</characteristic>
+            <characteristic name="D" typeId="3243-eb64-8d41-ece1"/>
+            <characteristic name="Keywords" typeId="3655-2fd8-5ed0-9577">light</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="f5f0-b374-eb38-5684" name="Lost Soldier" hidden="false" collective="false" import="true" type="model">
+      <profiles>
+        <profile id="72bf-5c5d-0f88-978a" name="Lost Soldier" hidden="false" typeId="5b1b-0173-18b5-59ad" typeName="Unit">
+          <characteristics>
+            <characteristic name="M" typeId="2cbe-15bb-206a-c3e2">5&quot;</characteristic>
+            <characteristic name="CT" typeId="6b8c-6fa4-85b1-e51b">3+</characteristic>
+            <characteristic name="CC" typeId="74c7-849d-8110-24ac">4</characteristic>
+            <characteristic name="E" typeId="3882-bfe3-2a59-2952">4</characteristic>
+            <characteristic name="F" typeId="21ee-fc5d-a525-34aa">4</characteristic>
+            <characteristic name="PV" typeId="3553-346c-66bd-156f">2</characteristic>
+            <characteristic name="A" typeId="5fdd-960b-0516-72f5">3+ / 5++</characteristic>
+            <characteristic name="O" typeId="91bd-657f-7803-f974">7+</characteristic>
+            <characteristic name="Rules" typeId="e1f5-8606-d323-7037"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="c259-b8ef-cedb-c6a6" name="New SelectionEntryGroup" hidden="false" collective="false" import="true" defaultSelectionEntryId="dc31-084d-1d04-70a8">
+          <entryLinks>
+            <entryLink id="9f7c-2a9d-0771-0d4f" name="Warp Flammer" hidden="false" collective="false" import="true" targetId="b901-5b4e-f1fd-199f" type="selectionEntry"/>
+            <entryLink id="dc31-084d-1d04-70a8" name="Warp Gun" hidden="false" collective="false" import="true" targetId="b56a-e469-0980-ab3c" type="selectionEntry"/>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="25.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="b901-5b4e-f1fd-199f" name="Warp Flammer" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="82a7-fb42-b114-f3ad" name="Warp Flammer" hidden="false" typeId="9dca-df4d-90ea-88cb" typeName="Ranged Weapons">
+          <characteristics>
+            <characteristic name="Range" typeId="5db7-a574-7d62-7037">Flamme	</characteristic>
+            <characteristic name="A" typeId="ae6d-f386-4c1f-d2c8">1</characteristic>
+            <characteristic name="S" typeId="3a26-54c6-47d7-3299">4</characteristic>
+            <characteristic name="PA" typeId="a68d-f417-7582-813a">1</characteristic>
+            <characteristic name="D" typeId="3243-eb64-8d41-ece1">1</characteristic>
+            <characteristic name="Keywords" typeId="3655-2fd8-5ed0-9577"/>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry id="ceba-1834-4822-61b7" name="Lost Soldier (Sergent)" hidden="false" collective="false" import="true" type="model">
+      <profiles>
+        <profile id="cd3e-dad1-72ae-bef9" name="Lost Soldier" hidden="false" typeId="5b1b-0173-18b5-59ad" typeName="Unit">
+          <characteristics>
+            <characteristic name="M" typeId="2cbe-15bb-206a-c3e2">5&quot;</characteristic>
+            <characteristic name="CT" typeId="6b8c-6fa4-85b1-e51b">3+</characteristic>
+            <characteristic name="CC" typeId="74c7-849d-8110-24ac">4</characteristic>
+            <characteristic name="E" typeId="3882-bfe3-2a59-2952">4</characteristic>
+            <characteristic name="F" typeId="21ee-fc5d-a525-34aa">4</characteristic>
+            <characteristic name="PV" typeId="3553-346c-66bd-156f">2</characteristic>
+            <characteristic name="A" typeId="5fdd-960b-0516-72f5">3+ / 5++</characteristic>
+            <characteristic name="O" typeId="91bd-657f-7803-f974">7+</characteristic>
+            <characteristic name="Rules" typeId="e1f5-8606-d323-7037"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="b7c8-80e0-ae35-9a22" name="New SelectionEntryGroup" hidden="false" collective="false" import="true">
+          <entryLinks>
+            <entryLink id="9bb2-4c1c-ab37-f485" name="Warp Flammer" hidden="false" collective="false" import="true" targetId="b901-5b4e-f1fd-199f" type="selectionEntry"/>
+            <entryLink id="c873-d4c4-16ad-4eac" name="Warp Gun" hidden="false" collective="false" import="true" targetId="b56a-e469-0980-ab3c" type="selectionEntry"/>
+            <entryLink id="fead-7be8-8818-5cb3" name="Warp Staff" hidden="false" collective="false" import="true" targetId="1095-c173-dd1d-51db" type="selectionEntry">
+              <costs>
+                <cost name="pts" typeId="51b2-306e-1021-d207" value="5.0"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="25.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="1095-c173-dd1d-51db" name="Warp Staff" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="c12f-7452-bfe7-795e" name="Warp Staff (Melee)" hidden="false" typeId="2a01-d90d-ecfb-1131" typeName="Melee Weapons">
+          <characteristics>
+            <characteristic name="Range" typeId="c624-6d19-f433-14a8"/>
+            <characteristic name="A" typeId="a8ee-fc72-899f-b4ce">4</characteristic>
+            <characteristic name="S" typeId="13f1-d2d2-1cb0-ddc3">+1</characteristic>
+            <characteristic name="PA" typeId="ab31-bafb-482f-18f0">2</characteristic>
+            <characteristic name="D" typeId="08b5-ec3a-ebe3-96f0">1</characteristic>
+            <characteristic name="Keywords" typeId="abd1-26cd-f140-5eab"/>
+          </characteristics>
+        </profile>
+        <profile id="cc5c-9f0d-bbe7-c155" name="Warp Staff (Range)" hidden="false" typeId="9dca-df4d-90ea-88cb" typeName="Ranged Weapons">
+          <characteristics>
+            <characteristic name="Range" typeId="5db7-a574-7d62-7037">12&quot;</characteristic>
+            <characteristic name="A" typeId="ae6d-f386-4c1f-d2c8">1</characteristic>
+            <characteristic name="S" typeId="3a26-54c6-47d7-3299"/>
+            <characteristic name="PA" typeId="a68d-f417-7582-813a"/>
+            <characteristic name="D" typeId="3243-eb64-8d41-ece1"/>
+            <characteristic name="Keywords" typeId="3655-2fd8-5ed0-9577">Blast</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="151c-8865-bd3a-fb9e" name="Blast" hidden="false" targetId="05bc-7a01-b0a7-4615" type="rule"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry id="ddea-fe2f-1258-c0ed" name="Heavy Warp Gun" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="0765-96ad-c20f-0b45" name="Heavy Warp Gun" hidden="false" typeId="9dca-df4d-90ea-88cb" typeName="Ranged Weapons">
+          <characteristics>
+            <characteristic name="Range" typeId="5db7-a574-7d62-7037">24&quot;</characteristic>
+            <characteristic name="A" typeId="ae6d-f386-4c1f-d2c8">5</characteristic>
+            <characteristic name="S" typeId="3a26-54c6-47d7-3299">4</characteristic>
+            <characteristic name="PA" typeId="a68d-f417-7582-813a">1</characteristic>
+            <characteristic name="D" typeId="3243-eb64-8d41-ece1">2</characteristic>
+            <characteristic name="Keywords" typeId="3655-2fd8-5ed0-9577">heavy</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+  </sharedSelectionEntries>
+</catalogue>

@@ -1,0 +1,622 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<catalogue id="a147-e01a-2e39-5912" name="Coalition of Spheres" revision="2" battleScribeVersion="2.03" library="false" gameSystemId="7c09-cc6c-a0b3-db0b" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <categoryEntries>
+    <categoryEntry id="6e0d-19c9-d710-21ad" name="Avatar" hidden="false"/>
+  </categoryEntries>
+  <selectionEntries>
+    <selectionEntry id="8284-7644-352d-9926" name="Avatar" hidden="false" collective="false" import="true" type="unit">
+      <profiles>
+        <profile id="a4da-bafa-8a3a-1a95" name="Avatar" hidden="false" typeId="5b1b-0173-18b5-59ad" typeName="Unit">
+          <characteristics>
+            <characteristic name="M" typeId="2cbe-15bb-206a-c3e2">6&quot;</characteristic>
+            <characteristic name="CT" typeId="6b8c-6fa4-85b1-e51b">5+</characteristic>
+            <characteristic name="CC" typeId="74c7-849d-8110-24ac">5</characteristic>
+            <characteristic name="E" typeId="3882-bfe3-2a59-2952">3</characteristic>
+            <characteristic name="F" typeId="21ee-fc5d-a525-34aa">3</characteristic>
+            <characteristic name="PV" typeId="3553-346c-66bd-156f">4</characteristic>
+            <characteristic name="A" typeId="5fdd-960b-0516-72f5">5++</characteristic>
+            <characteristic name="O" typeId="91bd-657f-7803-f974">7+</characteristic>
+            <characteristic name="Rules" typeId="e1f5-8606-d323-7037">Command(1)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="9842-2fd0-72d6-47c0" name="Avatar" hidden="false">
+          <description>While in battle, every ally unit can re roll organisation test
+If died, give 1 VP</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink id="9b57-db5a-bc7b-53ec" name="Command(X)" hidden="false" targetId="9127-20fa-ca47-027e" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="a60c-2c39-6678-723a" name="Character" hidden="false" targetId="ed9c-7837-f0e8-a563" primary="true"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="d8f3-ab98-dab1-8a6f" name="Training" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6230-acf3-6dda-29ea" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a763-bfbf-d061-1940" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="e8d3-03f0-2769-4ab5" name="Ritual Blademaster" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8c6d-bf0e-197d-884b" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="0444-e4ae-cf1c-e843" name="Ritual Blade" hidden="false" typeId="2a01-d90d-ecfb-1131" typeName="Melee Weapons">
+                  <characteristics>
+                    <characteristic name="Range" typeId="c624-6d19-f433-14a8"/>
+                    <characteristic name="A" typeId="a8ee-fc72-899f-b4ce">5</characteristic>
+                    <characteristic name="S" typeId="13f1-d2d2-1cb0-ddc3">+2</characteristic>
+                    <characteristic name="PA" typeId="ab31-bafb-482f-18f0">1</characteristic>
+                    <characteristic name="D" typeId="08b5-ec3a-ebe3-96f0">1</characteristic>
+                    <characteristic name="Keywords" typeId="abd1-26cd-f140-5eab"/>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <rules>
+                <rule id="6c09-96da-80c2-38c0" name="Ritual Blademaster" hidden="false">
+                  <description>+2 CC lors d&apos;un duel</description>
+                </rule>
+              </rules>
+              <costs>
+                <cost name="pts" typeId="51b2-306e-1021-d207" value="30.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="625e-0db6-eba9-8029" name="Elemental Master" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8374-c55e-f154-4239" type="max"/>
+              </constraints>
+              <rules>
+                <rule id="3689-0578-bc02-80e4" name="Elemental Master" hidden="false">
+                  <description>At the command phase: pick one of these powers, and the hero and all friendly models within 12” get one of these rules until the end of the round:
+• Wind: +3” when moving
+• Fire: +1 to shooting rolls
+• Water: Each unit regen 1D3 PV (can&apos;t comeback destroyed models)
+• Earth: +1 to melee rolls</description>
+                </rule>
+              </rules>
+              <costs>
+                <cost name="pts" typeId="51b2-306e-1021-d207" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="a2ef-0392-16aa-1bad" name="Psychic Master" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5969-4c75-3fab-58d7" type="max"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="fefb-8d32-6d9e-9830" name="Spheres Spells" hidden="false" targetId="dafe-53bd-25d0-3fdd" type="infoGroup"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="51b2-306e-1021-d207" value="20.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="157e-d7e0-6158-48a6" name="Weapon" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0b15-7e31-8b9e-3ccc" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1828-71cf-1a5f-3eb6" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="6ca9-f7c6-4e07-2a6c" name="Dual Spear" hidden="false" collective="false" import="true" type="upgrade">
+              <profiles>
+                <profile id="dd50-9bd2-5f55-7d1f" name="Dual Spear" hidden="false" typeId="2a01-d90d-ecfb-1131" typeName="Melee Weapons">
+                  <characteristics>
+                    <characteristic name="Range" typeId="c624-6d19-f433-14a8"/>
+                    <characteristic name="A" typeId="a8ee-fc72-899f-b4ce">4</characteristic>
+                    <characteristic name="S" typeId="13f1-d2d2-1cb0-ddc3">+2</characteristic>
+                    <characteristic name="PA" typeId="ab31-bafb-482f-18f0">1</characteristic>
+                    <characteristic name="D" typeId="08b5-ec3a-ebe3-96f0">2</characteristic>
+                    <characteristic name="Keywords" typeId="abd1-26cd-f140-5eab"/>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="pts" typeId="51b2-306e-1021-d207" value="10.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <entryLinks>
+            <entryLink id="524a-ebd2-c5fe-a360" name="Ritual Blade" hidden="false" collective="false" import="true" targetId="30fd-8264-f801-c194" type="selectionEntry"/>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="60.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="c11b-2c1a-c57e-39b1" name="Fire Squad" hidden="false" collective="false" import="true" type="unit">
+      <rules>
+        <rule id="452a-f549-6e5a-24bd" name="Fire Squad" hidden="false">
+          <description>Defender of the cause: If at 6&quot; or less of objective and charged, can shoot before the charge but after the charge move</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink id="727a-bd76-bce6-3368" name="Shocked (On ground)" hidden="false" targetId="a830-2a7a-6d52-ac6e" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="47fd-0b5d-a68b-2541" name="Troops" hidden="false" targetId="0d4d-04a9-1402-ca4a" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="6744-7130-c5bb-9f90" name="Drones" hidden="false" collective="false" import="true" targetId="6a9e-4258-9d35-8579" type="selectionEntryGroup"/>
+        <entryLink id="e5fa-448a-30b4-5df3" name="Grunt" hidden="false" collective="false" import="true" targetId="741b-10e4-6228-59ca" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="9.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4fa8-0224-36ea-3d3d" type="min"/>
+            <constraint field="selections" scope="parent" value="9.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="65f0-48fe-0f32-e1bf" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="24af-0409-a21c-6ad5" name="Grunt Leader" hidden="false" collective="false" import="true" targetId="71da-f9da-b88a-4c6e" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2ee7-4f4b-e4eb-4559" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="44a5-319d-c62f-6a43" type="min"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="d58a-c60d-a87d-808b" name="Earth Squad" hidden="false" collective="false" import="true" type="unit">
+      <rules>
+        <rule id="34af-6c5b-3ba6-1407" name="Earth Squad" hidden="false">
+          <description> If at 6&quot; or less of objective: +2 CC</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink id="4565-a1ed-ae91-435e" name="Shocked (On ground)" hidden="false" targetId="a830-2a7a-6d52-ac6e" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="b681-535b-39db-9303" name="Troops" hidden="false" targetId="0d4d-04a9-1402-ca4a" primary="true"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="8235-fffa-f0c4-4d7f" name="Upgrade" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e77f-6da0-f75a-c26b" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="12b5-ce83-9bf3-75d9" name="Explosive amunition" hidden="false" collective="false" import="true" type="upgrade">
+              <rules>
+                <rule id="81b2-13d2-3e1d-3135" name="Explosive amunition" hidden="false">
+                  <description>Carbine in this unit gain +1 F at half range</description>
+                </rule>
+              </rules>
+              <costs>
+                <cost name="pts" typeId="51b2-306e-1021-d207" value="10.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <entryLinks>
+            <entryLink id="a4b6-ffad-9443-622c" name="Impulsator Drone" hidden="false" collective="false" import="true" targetId="0f2d-a181-13ba-bffe" type="selectionEntry">
+              <costs>
+                <cost name="pts" typeId="51b2-306e-1021-d207" value="20.0"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="93a5-7fb1-12f3-ce58" name="Grunt (Earth)" hidden="false" collective="false" import="true" targetId="bc43-3ea2-18fc-d265" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="9.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2cf1-f008-5f74-74ba" type="min"/>
+            <constraint field="selections" scope="parent" value="9.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e237-c3b1-564f-bb77" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="472f-6a19-3a57-008a" name="Grunt Leader" hidden="false" collective="false" import="true" targetId="71da-f9da-b88a-4c6e" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="caaf-de1b-3eaf-edfb" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e4cc-dfc5-c2de-aa5c" type="min"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="485f-23a3-811e-7cd2" name="Sphere" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="da03-427b-7cfd-be5a" type="max"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b3e6-2e9c-3049-f918" type="min"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="f049-a726-69bf-e0f1" name="Faction" hidden="false" targetId="01dd-1a86-7547-a5c8" primary="true"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="62a5-0f9c-3224-01ef" name="Blade Sphere" hidden="false" collective="false" import="true" type="upgrade">
+          <rules>
+            <rule id="5b5e-c3e4-515f-8c63" name="Blade Sphere" hidden="false">
+              <description>+1 to hit if ennemy &lt;=9&quot; (melee and range)</description>
+            </rule>
+          </rules>
+        </selectionEntry>
+        <selectionEntry id="8886-1d9f-f041-9635" name="Order Sphere" hidden="false" collective="false" import="true" type="upgrade">
+          <rules>
+            <rule id="1e62-1777-7610-e284" name="Order Sphere" hidden="false">
+              <description>+1 to O
+Avatar gain the following ability:
+Count as 6 model for capture
+</description>
+            </rule>
+          </rules>
+        </selectionEntry>
+        <selectionEntry id="5acc-90a1-750b-5f32" name="Techno Sphere" hidden="false" collective="false" import="true" type="upgrade">
+          <rules>
+            <rule id="9c01-6cd8-0804-ef19" name="Techno Sphere" hidden="false">
+              <description>Ranged weapon gain +3&quot; to range
+Melee weapon gain +1 F</description>
+            </rule>
+          </rules>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+  </selectionEntries>
+  <rules>
+    <rule id="3abd-c6ce-9595-eabf" name="Laser" hidden="false">
+      <description>1:     +1 CT
+1:     Can launch missile
+2:     Ignore cover
+2:     Can shoot à full range with rapide fire
+3:     Can shoot through obstacle</description>
+    </rule>
+    <rule id="3c4e-6691-37de-0851" name="Warfar way" hidden="false">
+      <description>At the beginning of the first turn, choose one:
+
+Patience way: Turn 3-4-5 units each 6 on ranged hit inflict 1 more
+Fury way: Turn 1-2-3 unit gain +4&quot; to move, Turn 4-5 +1 to CC</description>
+    </rule>
+  </rules>
+  <sharedSelectionEntries>
+    <selectionEntry id="25f3-60a3-ef6b-bc64" name="Gun Drone" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="baa1-d911-371c-00dd" name="Drone" hidden="false" targetId="2462-806e-b559-b68f" type="profile"/>
+      </infoLinks>
+      <entryLinks>
+        <entryLink id="6207-fb5a-c92c-ce6f" name="Carbine" hidden="false" collective="false" import="true" targetId="9c1f-7f7a-ccf0-1f27" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f44a-da9e-8ec0-25d3" type="max"/>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5ab9-1ea0-8f13-8649" type="min"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="0eb6-9f38-121f-2bae" name="Rifle" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="2823-c609-689b-8e11" name="Rifle" hidden="false" typeId="9dca-df4d-90ea-88cb" typeName="Ranged Weapons">
+          <characteristics>
+            <characteristic name="Range" typeId="5db7-a574-7d62-7037">30&quot;</characteristic>
+            <characteristic name="A" typeId="ae6d-f386-4c1f-d2c8">1</characteristic>
+            <characteristic name="S" typeId="3a26-54c6-47d7-3299">5</characteristic>
+            <characteristic name="PA" typeId="a68d-f417-7582-813a">1</characteristic>
+            <characteristic name="D" typeId="3243-eb64-8d41-ece1">1</characteristic>
+            <characteristic name="Keywords" typeId="3655-2fd8-5ed0-9577"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="3544-b621-da42-8464" name="Impulsion" hidden="false" targetId="1b01-8fd8-d3ce-7156" type="rule"/>
+        <infoLink id="c604-e3fe-ccc3-b2e6" name="Light" hidden="false" targetId="fd8f-1ff8-ac6c-2d43" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="3b16-57e4-8cdd-7c0f" name="Marker Drone" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="2d5f-710f-b487-486a" name="Drone" hidden="false" targetId="2462-806e-b559-b68f" type="profile"/>
+        <infoLink id="e8b8-a79e-90d4-48c3" name="Markerlight" hidden="false" targetId="cb17-c79c-1f8e-2483" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="cce4-519f-7876-205f" name="Shield Drone" hidden="false" collective="false" import="true" type="upgrade">
+      <rules>
+        <rule id="4b40-846e-b9ec-fd1e" name="Shield Generator" hidden="false">
+          <description>All model in the same unit gain 5++ Armor</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink id="72df-5b60-cb6e-211c" name="Drone" hidden="false" targetId="2462-806e-b559-b68f" type="profile"/>
+      </infoLinks>
+      <costs>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="bc43-3ea2-18fc-d265" name="Grunt (Earth)" hidden="false" collective="false" import="true" type="model">
+      <profiles>
+        <profile id="3b37-88ad-7929-84f4" name="Grunt" hidden="false" typeId="5b1b-0173-18b5-59ad" typeName="Unit">
+          <characteristics>
+            <characteristic name="M" typeId="2cbe-15bb-206a-c3e2">6&quot;</characteristic>
+            <characteristic name="CT" typeId="6b8c-6fa4-85b1-e51b">4+</characteristic>
+            <characteristic name="CC" typeId="74c7-849d-8110-24ac">2</characteristic>
+            <characteristic name="E" typeId="3882-bfe3-2a59-2952">3</characteristic>
+            <characteristic name="F" typeId="21ee-fc5d-a525-34aa">3</characteristic>
+            <characteristic name="PV" typeId="3553-346c-66bd-156f">1</characteristic>
+            <characteristic name="A" typeId="5fdd-960b-0516-72f5">4+</characteristic>
+            <characteristic name="O" typeId="91bd-657f-7803-f974">8+</characteristic>
+            <characteristic name="Rules" typeId="e1f5-8606-d323-7037"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <entryLinks>
+        <entryLink id="70f5-5b0c-4800-acb6" name="Carbine" hidden="false" collective="false" import="true" targetId="9c1f-7f7a-ccf0-1f27" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3017-47e0-710d-3d6f" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5f49-6df6-665b-026c" type="min"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="15.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="9c1f-7f7a-ccf0-1f27" name="Carbine" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="75a9-4941-90df-63ee" name="Carbine" hidden="false" typeId="9dca-df4d-90ea-88cb" typeName="Ranged Weapons">
+          <characteristics>
+            <characteristic name="Range" typeId="5db7-a574-7d62-7037">18&quot;</characteristic>
+            <characteristic name="A" typeId="ae6d-f386-4c1f-d2c8">2</characteristic>
+            <characteristic name="S" typeId="3a26-54c6-47d7-3299">5</characteristic>
+            <characteristic name="PA" typeId="a68d-f417-7582-813a">1</characteristic>
+            <characteristic name="D" typeId="3243-eb64-8d41-ece1">1</characteristic>
+            <characteristic name="Keywords" typeId="3655-2fd8-5ed0-9577"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="3a35-a57b-e88a-84e6" name="Shock" hidden="false" targetId="3323-d9e5-02a8-fd89" type="rule"/>
+        <infoLink id="12c2-a817-700e-d095" name="Impulsion" hidden="false" targetId="1b01-8fd8-d3ce-7156" type="rule"/>
+        <infoLink id="28a3-f0b0-c85b-d926" name="Assault" hidden="false" targetId="4766-7484-ce2d-e381" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="0f2d-a181-13ba-bffe" name="Impulsator Drone" hidden="false" collective="false" import="true" type="upgrade">
+      <rules>
+        <rule id="1b15-8c66-b44d-05df" name="Impulsator Drone" hidden="false">
+          <description>Impulsion weapon gain +6&quot; range</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink id="16f1-5ff9-975d-2165" name="Drone" hidden="false" targetId="2462-806e-b559-b68f" type="profile"/>
+      </infoLinks>
+      <costs>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="91f9-8d0f-cec2-2295" name="New SelectionEntry" hidden="false" collective="false" import="true" type="upgrade">
+      <costs>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="71da-f9da-b88a-4c6e" name="Grunt Leader" hidden="false" collective="false" import="true" type="model">
+      <profiles>
+        <profile id="edfb-4cb8-5620-62d5" name="Grunt" hidden="false" typeId="5b1b-0173-18b5-59ad" typeName="Unit">
+          <characteristics>
+            <characteristic name="M" typeId="2cbe-15bb-206a-c3e2">6&quot;</characteristic>
+            <characteristic name="CT" typeId="6b8c-6fa4-85b1-e51b">4+</characteristic>
+            <characteristic name="CC" typeId="74c7-849d-8110-24ac">2</characteristic>
+            <characteristic name="E" typeId="3882-bfe3-2a59-2952">3</characteristic>
+            <characteristic name="F" typeId="21ee-fc5d-a525-34aa">3</characteristic>
+            <characteristic name="PV" typeId="3553-346c-66bd-156f">1</characteristic>
+            <characteristic name="A" typeId="5fdd-960b-0516-72f5">4+</characteristic>
+            <characteristic name="O" typeId="91bd-657f-7803-f974">8+</characteristic>
+            <characteristic name="Rules" typeId="e1f5-8606-d323-7037"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="7645-57c7-455a-99b2" name="New SelectionEntryGroup" hidden="false" collective="false" import="true" defaultSelectionEntryId="25cf-29a6-6215-a964">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ba76-0f0a-d553-6428" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cd25-5a52-380f-cba6" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="25cf-29a6-6215-a964" name="Rifle" hidden="false" collective="false" import="true" targetId="0eb6-9f38-121f-2bae" type="selectionEntry"/>
+            <entryLink id="3142-fa9c-70f6-7519" name="Rail Rifle" hidden="false" collective="false" import="true" targetId="fe9c-a4de-ae0e-ae0a" type="selectionEntry">
+              <costs>
+                <cost name="pts" typeId="51b2-306e-1021-d207" value="10.0"/>
+              </costs>
+            </entryLink>
+            <entryLink id="11c0-0f66-486c-997e" name="Carbine" hidden="false" collective="false" import="true" targetId="9c1f-7f7a-ccf0-1f27" type="selectionEntry"/>
+            <entryLink id="4f9b-9861-5c64-ddc6" name="Ritual Blade" hidden="false" collective="false" import="true" targetId="30fd-8264-f801-c194" type="selectionEntry">
+              <costs>
+                <cost name="pts" typeId="51b2-306e-1021-d207" value="10.0"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="15.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="fe9c-a4de-ae0e-ae0a" name="Rail Rifle" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="045b-61c0-4d5d-dc6a" name="Rail Rifle" hidden="false" typeId="9dca-df4d-90ea-88cb" typeName="Ranged Weapons">
+          <characteristics>
+            <characteristic name="Range" typeId="5db7-a574-7d62-7037">36&quot;</characteristic>
+            <characteristic name="A" typeId="ae6d-f386-4c1f-d2c8">1</characteristic>
+            <characteristic name="S" typeId="3a26-54c6-47d7-3299">7</characteristic>
+            <characteristic name="PA" typeId="a68d-f417-7582-813a">3</characteristic>
+            <characteristic name="D" typeId="3243-eb64-8d41-ece1">3</characteristic>
+            <characteristic name="Keywords" typeId="3655-2fd8-5ed0-9577"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="c8c8-23ce-c52c-0762" name="Heavy" hidden="false" targetId="2aac-85b1-693c-6618" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="741b-10e4-6228-59ca" name="Grunt" hidden="false" collective="false" import="true" type="model">
+      <profiles>
+        <profile id="3f50-b931-3375-c0b0" name="Grunt" hidden="false" typeId="5b1b-0173-18b5-59ad" typeName="Unit">
+          <characteristics>
+            <characteristic name="M" typeId="2cbe-15bb-206a-c3e2">6&quot;</characteristic>
+            <characteristic name="CT" typeId="6b8c-6fa4-85b1-e51b">4+</characteristic>
+            <characteristic name="CC" typeId="74c7-849d-8110-24ac">2</characteristic>
+            <characteristic name="E" typeId="3882-bfe3-2a59-2952">3</characteristic>
+            <characteristic name="F" typeId="21ee-fc5d-a525-34aa">3</characteristic>
+            <characteristic name="PV" typeId="3553-346c-66bd-156f">1</characteristic>
+            <characteristic name="A" typeId="5fdd-960b-0516-72f5">4+</characteristic>
+            <characteristic name="O" typeId="91bd-657f-7803-f974">8+</characteristic>
+            <characteristic name="Rules" typeId="e1f5-8606-d323-7037"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <entryLinks>
+        <entryLink id="ceb3-21d8-a013-43a7" name="Rifle" hidden="false" collective="false" import="true" targetId="0eb6-9f38-121f-2bae" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8d46-2b7c-28e9-159e" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bec1-bb5f-e37d-b094" type="min"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="15.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="30fd-8264-f801-c194" name="Ritual Blade" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="ae2a-3cc4-9ada-8815" name="Ritual Blade" hidden="false" typeId="2a01-d90d-ecfb-1131" typeName="Melee Weapons">
+          <characteristics>
+            <characteristic name="Range" typeId="c624-6d19-f433-14a8"/>
+            <characteristic name="A" typeId="a8ee-fc72-899f-b4ce">4</characteristic>
+            <characteristic name="S" typeId="13f1-d2d2-1cb0-ddc3"/>
+            <characteristic name="PA" typeId="ab31-bafb-482f-18f0">1</characteristic>
+            <characteristic name="D" typeId="08b5-ec3a-ebe3-96f0">1</characteristic>
+            <characteristic name="Keywords" typeId="abd1-26cd-f140-5eab"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="da73-c447-2078-b694" name="Ion Rifle" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="78e8-5f0c-01f7-190f" name="Ion Rifle" hidden="false" typeId="9dca-df4d-90ea-88cb" typeName="Ranged Weapons">
+          <characteristics>
+            <characteristic name="Range" typeId="5db7-a574-7d62-7037">30&quot;</characteristic>
+            <characteristic name="A" typeId="ae6d-f386-4c1f-d2c8">3</characteristic>
+            <characteristic name="S" typeId="3a26-54c6-47d7-3299">6</characteristic>
+            <characteristic name="PA" typeId="a68d-f417-7582-813a">1</characteristic>
+            <characteristic name="D" typeId="3243-eb64-8d41-ece1">2</characteristic>
+            <characteristic name="Keywords" typeId="3655-2fd8-5ed0-9577"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="43d5-13a4-2c72-3fb1" name="Overcharge" hidden="false" targetId="5943-bef9-473c-5f6f" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="1418-cc83-bc31-0c85" name="Carnnivor" hidden="false" collective="false" import="true" type="model">
+      <profiles>
+        <profile id="33b3-eae7-dba5-bca2" name="Carnnivor" hidden="false" typeId="5b1b-0173-18b5-59ad" typeName="Unit">
+          <characteristics>
+            <characteristic name="M" typeId="2cbe-15bb-206a-c3e2">8&quot;</characteristic>
+            <characteristic name="CT" typeId="6b8c-6fa4-85b1-e51b">5+</characteristic>
+            <characteristic name="CC" typeId="74c7-849d-8110-24ac">4</characteristic>
+            <characteristic name="E" typeId="3882-bfe3-2a59-2952">3</characteristic>
+            <characteristic name="F" typeId="21ee-fc5d-a525-34aa">4</characteristic>
+            <characteristic name="PV" typeId="3553-346c-66bd-156f">1</characteristic>
+            <characteristic name="A" typeId="5fdd-960b-0516-72f5">6+</characteristic>
+            <characteristic name="O" typeId="91bd-657f-7803-f974">10+</characteristic>
+            <characteristic name="Rules" typeId="e1f5-8606-d323-7037"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="0.0"/>
+      </costs>
+    </selectionEntry>
+  </sharedSelectionEntries>
+  <sharedSelectionEntryGroups>
+    <selectionEntryGroup id="6a9e-4258-9d35-8579" name="Drones" hidden="false" collective="false" import="true">
+      <constraints>
+        <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8835-a77b-8796-f139" type="max"/>
+        <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2a0f-f3ec-b015-f7fc" type="min"/>
+      </constraints>
+      <entryLinks>
+        <entryLink id="8564-0883-c58b-e091" name="Gun Drone" hidden="false" collective="false" import="true" targetId="25f3-60a3-ef6b-bc64" type="selectionEntry">
+          <costs>
+            <cost name="pts" typeId="51b2-306e-1021-d207" value="10.0"/>
+          </costs>
+        </entryLink>
+        <entryLink id="745a-199b-fe7f-151e" name="Marker Drone" hidden="false" collective="false" import="true" targetId="3b16-57e4-8cdd-7c0f" type="selectionEntry">
+          <costs>
+            <cost name="pts" typeId="51b2-306e-1021-d207" value="10.0"/>
+          </costs>
+        </entryLink>
+        <entryLink id="c7f6-c76a-a804-cdd2" name="Shield Drone" hidden="false" collective="false" import="true" targetId="cce4-519f-7876-205f" type="selectionEntry">
+          <costs>
+            <cost name="pts" typeId="51b2-306e-1021-d207" value="20.0"/>
+          </costs>
+        </entryLink>
+      </entryLinks>
+    </selectionEntryGroup>
+  </sharedSelectionEntryGroups>
+  <sharedRules>
+    <rule id="cb17-c79c-1f8e-2483" name="Markerlight" hidden="false">
+      <description>Command phase: 
+40&quot;, on 3+ X laser token</description>
+    </rule>
+    <rule id="1b01-8fd8-d3ce-7156" name="Impulsion" hidden="false"/>
+  </sharedRules>
+  <sharedProfiles>
+    <profile id="2462-806e-b559-b68f" name="Drone" hidden="false" typeId="5b1b-0173-18b5-59ad" typeName="Unit">
+      <characteristics>
+        <characteristic name="M" typeId="2cbe-15bb-206a-c3e2">8&quot;</characteristic>
+        <characteristic name="CT" typeId="6b8c-6fa4-85b1-e51b">5+</characteristic>
+        <characteristic name="CC" typeId="74c7-849d-8110-24ac">2</characteristic>
+        <characteristic name="E" typeId="3882-bfe3-2a59-2952">4</characteristic>
+        <characteristic name="F" typeId="21ee-fc5d-a525-34aa">3</characteristic>
+        <characteristic name="PV" typeId="3553-346c-66bd-156f">2</characteristic>
+        <characteristic name="A" typeId="5fdd-960b-0516-72f5">4+</characteristic>
+        <characteristic name="O" typeId="91bd-657f-7803-f974">10+</characteristic>
+        <characteristic name="Rules" typeId="e1f5-8606-d323-7037">Fly</characteristic>
+      </characteristics>
+    </profile>
+  </sharedProfiles>
+  <sharedInfoGroups>
+    <infoGroup id="dafe-53bd-25d0-3fdd" name="Spheres Spells" hidden="false">
+      <profiles>
+        <profile id="0cd9-73ea-fa52-36b9" name="Patience" hidden="false" typeId="db6c-7307-8d0d-12fd" typeName="Spell">
+          <characteristics>
+            <characteristic name="Power" typeId="2e8c-8e70-d72a-bf53">6+</characteristic>
+            <characteristic name="Range" typeId="1a6e-7d90-3d84-7f95">12&quot;</characteristic>
+            <characteristic name="Effect" typeId="e0f0-f582-a23c-dcfa">Target gain Stealth next time it is shot at.</characteristic>
+            <characteristic name="Target" typeId="c9c6-a195-3c77-0cc0">Ally</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="e67e-606d-3c3b-f97c" name="Inspiration" hidden="false" typeId="db6c-7307-8d0d-12fd" typeName="Spell">
+          <characteristics>
+            <characteristic name="Power" typeId="2e8c-8e70-d72a-bf53">6+</characteristic>
+            <characteristic name="Range" typeId="1a6e-7d90-3d84-7f95">12&quot;</characteristic>
+            <characteristic name="Effect" typeId="e0f0-f582-a23c-dcfa">Target is no more shocked or rooted</characteristic>
+            <characteristic name="Target" typeId="c9c6-a195-3c77-0cc0">Ally</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="55f7-7d77-1b4d-9cd0" name="Pacification" hidden="false" typeId="db6c-7307-8d0d-12fd" typeName="Spell">
+          <characteristics>
+            <characteristic name="Power" typeId="2e8c-8e70-d72a-bf53">8+</characteristic>
+            <characteristic name="Range" typeId="1a6e-7d90-3d84-7f95">12&quot;</characteristic>
+            <characteristic name="Effect" typeId="e0f0-f582-a23c-dcfa">target gets -3 to CC next time it fights.</characteristic>
+            <characteristic name="Target" typeId="c9c6-a195-3c77-0cc0">Ennemy</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </infoGroup>
+  </sharedInfoGroups>
+</catalogue>
