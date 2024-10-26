@@ -206,6 +206,21 @@ invocation de familier (1 fois par bataille):Invoquer gratuitement D3+1 modèle 
           </entryLinks>
         </selectionEntryGroup>
         <selectionEntryGroup id="2a15-e31e-c870-6566" name="Upgrade" hidden="false" collective="false" import="true">
+          <selectionEntries>
+            <selectionEntry id="5e55-54d1-a338-e53d" name="Ritual tools" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6f1c-27b5-b563-228a" type="max"/>
+              </constraints>
+              <rules>
+                <rule id="6f7a-ad6a-d921-e97c" name="Ritual tools" hidden="false">
+                  <description>+1 to ritual</description>
+                </rule>
+              </rules>
+              <costs>
+                <cost name="pts" typeId="51b2-306e-1021-d207" value="10.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
           <entryLinks>
             <entryLink id="74df-4864-849b-d09e" name="Warp Shield" hidden="false" collective="false" import="true" targetId="3fc2-0d4a-7b1e-0209" type="selectionEntry">
               <constraints>
