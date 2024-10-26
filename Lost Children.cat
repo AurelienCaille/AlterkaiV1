@@ -14,16 +14,308 @@ Un fois par tour, Vous pouvez relancer jusqu’à 3 sauvegardes ratées contre u
 </description>
         </rule>
       </rules>
-      <entryLinks>
-        <entryLink id="10a4-5fee-833d-7740" name="Lost Soldier" hidden="false" collective="false" import="true" targetId="f5f0-b374-eb38-5684" type="selectionEntry">
+      <infoLinks>
+        <infoLink id="db77-569f-b20f-8478" name="Ritual(X)" hidden="false" targetId="4bc8-da57-1ca2-1c10" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="55cf-44d8-3e82-9fd7" name="Troops" hidden="false" targetId="0d4d-04a9-1402-ca4a" primary="true"/>
+        <categoryLink id="ed34-feeb-ac94-2d9f" name="Psyker" hidden="false" targetId="a9b9-69d7-e122-6841" primary="false"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="f38d-a9c3-0193-fbd2" name="Upgrade" hidden="false" collective="false" import="true">
+          <entryLinks>
+            <entryLink id="79e8-15ff-e7c9-f235" name="Warp Shield" hidden="false" collective="false" import="true" targetId="3fc2-0d4a-7b1e-0209" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0c5a-54e3-10ee-0db7" type="max"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="51b2-306e-1021-d207" value="5.0"/>
+              </costs>
+            </entryLink>
+            <entryLink id="3ccb-703f-c09d-1d58" name="Warp mutation" hidden="false" collective="false" import="true" targetId="d802-d7cc-431b-89f4" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4279-14d5-9c94-22de" type="max"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="51b2-306e-1021-d207" value="15.0"/>
+              </costs>
+            </entryLink>
+            <entryLink id="94d6-d6f6-39b4-1a76" name="Warp Icon" hidden="false" collective="false" import="true" targetId="5c3d-c069-39a4-f89d" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7a15-67ad-8575-4038" type="max"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="51b2-306e-1021-d207" value="5.0"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="d65c-0f2c-a2f8-89b6" name="Veterance" hidden="false" collective="false" import="true">
           <constraints>
-            <constraint field="selections" scope="parent" value="9.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ef0f-b12f-840a-7f3d" type="max"/>
-            <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c913-004a-9fa0-0ece" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="93af-d7c4-13d9-1f4f" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="cf19-af6d-9408-50d8" name="Immortal" hidden="false" collective="false" import="true" type="upgrade">
+              <rules>
+                <rule id="a689-d295-1c1a-cef8" name="Immortal" hidden="false">
+                  <description>regeneration(6+)</description>
+                </rule>
+              </rules>
+              <costs>
+                <cost name="pts" typeId="51b2-306e-1021-d207" value="20.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="7851-0cb3-a5a3-4d41" name="Warp Explorer" hidden="false" collective="false" import="true" type="upgrade">
+              <rules>
+                <rule id="8880-ac61-47f0-4142" name="Warp Explorer" hidden="false">
+                  <description>can re roll one dice for psychik test if at 6&quot; of objective</description>
+                </rule>
+              </rules>
+              <costs>
+                <cost name="pts" typeId="51b2-306e-1021-d207" value="5.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="ec72-f438-8918-5c06" name="War Fighter" hidden="false" collective="false" import="true" type="upgrade">
+              <rules>
+                <rule id="1e63-8e6a-7d6f-2c01" name="War Fighter" hidden="false">
+                  <description>Once per battle, can re roll 1 on hit</description>
+                </rule>
+              </rules>
+              <costs>
+                <cost name="pts" typeId="51b2-306e-1021-d207" value="10.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="453e-75cf-28f8-5d58" name="Lost Soldiers" hidden="false" collective="false" import="true" defaultSelectionEntryId="06ad-1374-31a0-88d0">
+          <constraints>
+            <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="588e-f25b-fda3-921e" type="min"/>
+            <constraint field="selections" scope="parent" value="9.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f289-31b6-154a-765d" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="06ad-1374-31a0-88d0" name="Lost Soldier (Gun)" hidden="false" collective="true" import="true" targetId="f5f0-b374-eb38-5684" type="selectionEntry"/>
+            <entryLink id="50b8-4305-c977-07df" name="Lost Soldier (Flammer)" hidden="false" collective="true" import="true" targetId="942c-3d46-7a0d-652a" type="selectionEntry"/>
+            <entryLink id="5650-314a-f88d-daf8" name="Lost Soldier (Heavy)" hidden="false" collective="false" import="true" targetId="586a-472f-3552-7427" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2a99-fe1c-f954-39d6" type="max"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="51b2-306e-1021-d207" value="35.0"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="547f-1f8f-4ecf-d9d9" name="Weapons (Equip each model in unit)" hidden="false" collective="false" import="true">
+          <comment></comment>
+          <entryLinks>
+            <entryLink id="eb67-f876-6ce5-1561" name="Warp grenade" hidden="false" collective="false" import="true" targetId="9c53-fd58-1113-64d1" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f3f4-6284-df95-03ec" type="max"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="51b2-306e-1021-d207" value="10.0"/>
+              </costs>
+            </entryLink>
+            <entryLink id="847c-c116-7f1f-f0ce" name="Warp Pistol" hidden="false" collective="false" import="true" targetId="da1d-bf1f-58ac-5bcb" type="selectionEntry">
+              <modifiers>
+                <modifier type="increment" field="51b2-306e-1021-d207" value="2.0">
+                  <repeats>
+                    <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="model" repeats="1" roundUp="false"/>
+                  </repeats>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0e41-cc16-bf6b-e8fb" type="max"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="51b2-306e-1021-d207" value="20.0"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="8ad6-19bd-f5a0-776b" name="Lost Soldier (Sergent)" hidden="false" collective="false" import="true" targetId="ceba-1834-4822-61b7" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3a3b-189a-33d4-9b93" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="dfe8-5fe3-0ab7-82c2" type="min"/>
           </constraints>
         </entryLink>
       </entryLinks>
     </selectionEntry>
+    <selectionEntry id="51e1-6d4e-a528-d13d" name="Ritual Master" hidden="false" collective="false" import="true" type="model">
+      <profiles>
+        <profile id="131c-4a52-839f-18b3" name="Ritual Master" hidden="false" typeId="5b1b-0173-18b5-59ad" typeName="Unit">
+          <characteristics>
+            <characteristic name="M" typeId="2cbe-15bb-206a-c3e2">5&quot;</characteristic>
+            <characteristic name="CT" typeId="6b8c-6fa4-85b1-e51b">3+</characteristic>
+            <characteristic name="CC" typeId="74c7-849d-8110-24ac">5</characteristic>
+            <characteristic name="E" typeId="3882-bfe3-2a59-2952">4</characteristic>
+            <characteristic name="F" typeId="21ee-fc5d-a525-34aa">4</characteristic>
+            <characteristic name="PV" typeId="3553-346c-66bd-156f">5</characteristic>
+            <characteristic name="A" typeId="5fdd-960b-0516-72f5">3+</characteristic>
+            <characteristic name="O" typeId="91bd-657f-7803-f974">5+</characteristic>
+            <characteristic name="Rules" typeId="e1f5-8606-d323-7037">Psycker(2), Ritual(2)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="5a8e-7e16-d136-7a80" name="Ritual Master" hidden="false">
+          <description>Rite oubliés: (actif)
+Lancer 1D6, sur un 3+ le rituel est réussi, choisissez alors un effet:
+enchantement: Cibler une unité, ses armes gagnent -1 de pa
+couverture: cibler une unité, elle ne peut être la cible d’une capacité ennemie autre que l’effet d’une arme
+occulte: choisissez une unité infanterie alliée, sacrifier D3 modèle. Vous pouvez lancer 1 sort de plus
+invocation de familier (1 fois par bataille):Invoquer gratuitement D3+1 modèle de guerrier thotys à 6”, ils forment alors une unité indépendante.
+</description>
+        </rule>
+        <rule id="a660-00c4-967c-d3fb" name="Ritual Master" hidden="false">
+          <description>En cas d’échec du rite oublié, le maître peut utiliser 1 point de rituel  pour réussir automatiquement le test</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink id="9faf-05d5-00eb-1d44" name="Spells" hidden="false" targetId="a78f-6f3d-8fde-af6d" type="infoGroup"/>
+        <infoLink id="aebe-1b01-6582-0ab0" name="Ritual(X)" hidden="false" targetId="4bc8-da57-1ca2-1c10" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="b102-51cc-ae77-2b7e" name="Character" hidden="false" targetId="ed9c-7837-f0e8-a563" primary="true"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="5f8f-399a-d720-25bb" name="Ranged Weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="fd9b-8f5e-3ec8-f9ae">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e2ef-7adc-4539-9ad2" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5fdd-6bb9-6b79-0ca9" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="fd9b-8f5e-3ec8-f9ae" name="Warp Gun" hidden="false" collective="false" import="true" targetId="b56a-e469-0980-ab3c" type="selectionEntry"/>
+            <entryLink id="149e-6d5a-81e9-cf7d" name="Warp Flammer" hidden="false" collective="false" import="true" targetId="b901-5b4e-f1fd-199f" type="selectionEntry"/>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="fc37-4ab6-eb03-4a8e" name="Melee Weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="4069-e18d-b589-dce8">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c6ec-2a31-95f5-7c06" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9b88-cd35-8290-ba2b" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="4069-e18d-b589-dce8" name="Warp Staff" hidden="false" collective="false" import="true" targetId="1095-c173-dd1d-51db" type="selectionEntry"/>
+            <entryLink id="b1f7-5cb5-066e-cd41" name="Warp Sword" hidden="false" collective="false" import="true" targetId="3c19-6453-f8cb-c5f4" type="selectionEntry">
+              <costs>
+                <cost name="pts" typeId="51b2-306e-1021-d207" value="10.0"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="2a15-e31e-c870-6566" name="Upgrade" hidden="false" collective="false" import="true">
+          <entryLinks>
+            <entryLink id="74df-4864-849b-d09e" name="Warp Shield" hidden="false" collective="false" import="true" targetId="3fc2-0d4a-7b1e-0209" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="20df-479d-b63b-44a5" type="max"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="51b2-306e-1021-d207" value="5.0"/>
+              </costs>
+            </entryLink>
+            <entryLink id="0bb4-3b1e-ebdc-7898" name="Warp mutation" hidden="false" collective="false" import="true" targetId="d802-d7cc-431b-89f4" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="49c1-2431-3581-ba04" type="max"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="51b2-306e-1021-d207" value="20.0"/>
+              </costs>
+            </entryLink>
+            <entryLink id="e4d7-03d0-07bb-5701" name="Warp Icon" hidden="false" collective="false" import="true" targetId="5c3d-c069-39a4-f89d" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9c94-5215-760c-9f96" type="max"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="51b2-306e-1021-d207" value="5.0"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="32de-0ea7-abc9-9346" name="Armor" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e879-ba94-f08e-9e60" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="b7c8-6b4b-0b6c-8d99" name="Heavy Armor" hidden="false" collective="false" import="true" type="upgrade">
+              <rules>
+                <rule id="71fe-b400-c03d-4605" name="Heavy Armor" hidden="false">
+                  <description>gain 2+ armor</description>
+                </rule>
+              </rules>
+              <costs>
+                <cost name="pts" typeId="51b2-306e-1021-d207" value="20.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="c5c3-43b7-d41a-43ee" name="Ritual specialization" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f2ae-913e-fc21-f503" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="bf2a-2a16-419f-b566" name="Malediction" hidden="false" collective="false" import="true" type="upgrade">
+              <rules>
+                <rule id="b8a9-ad98-a809-9818" name="Malediction" hidden="false">
+                  <description>&quot;Malediction&quot; spell get +1 to roll</description>
+                </rule>
+              </rules>
+              <costs>
+                <cost name="pts" typeId="51b2-306e-1021-d207" value="5.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="2326-ca9c-e3c1-68f4" name="Invocation" hidden="false" collective="false" import="true" type="upgrade">
+              <rules>
+                <rule id="9ef4-85a9-5362-9544" name="Invocation" hidden="false">
+                  <description>&quot;Invocation&quot; spell get +3 to roll</description>
+                </rule>
+              </rules>
+              <costs>
+                <cost name="pts" typeId="51b2-306e-1021-d207" value="10.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="f460-975b-bbf7-c5d5" name="Time ritual" hidden="false" collective="false" import="true" type="upgrade">
+              <rules>
+                <rule id="a9c6-487f-af79-5140" name="Time ritual" hidden="false">
+                  <description>Once per batle, select another unit at 6&quot;, if shaken it&apos;s no more, if already activated it&apos;s no more</description>
+                </rule>
+              </rules>
+              <costs>
+                <cost name="pts" typeId="51b2-306e-1021-d207" value="20.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="90.0"/>
+      </costs>
+    </selectionEntry>
   </selectionEntries>
+  <rules>
+    <rule id="0a24-d142-2894-d06f" name="Sorcerer Ritual" hidden="false">
+      <description>Rituel de sorcier
+
+Au début du tour, chaque personnage ayant la règle “rituel(X)” génère X points de rituel (pour l’armée)
+Vous pouvez alors dépenser les points de rituel durant ce tour pour effectuer 1 rituel. 
+Un même rituel ne peut être utilisé 2 fois lors d’un tours
+Les rituels s’effectue durant l’activation d’une unité avec ce trait à n’importe quel moment
+
+Amplificatum(4)
+Augmente de 6” la portée d’un sort
+
+Vision partagée (2)
+Le psyker peut utiliser la vision d’un autre pour lancer un sort
+
+Concentration warp (4)
+Ajoute 2 à un test psychique
+
+Sur-Canalisation (5)
+Le psyker peut tenter de lancer un sort en plus, un sort précédemment tenté mais raté peut être lancé.
+</description>
+    </rule>
+  </rules>
   <sharedSelectionEntries>
     <selectionEntry id="b56a-e469-0980-ab3c" name="Warp Gun" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
@@ -42,30 +334,18 @@ Un fois par tour, Vous pouvez relancer jusqu’à 3 sauvegardes ratées contre u
         <cost name="pts" typeId="51b2-306e-1021-d207" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="f5f0-b374-eb38-5684" name="Lost Soldier" hidden="false" collective="false" import="true" type="model">
-      <profiles>
-        <profile id="72bf-5c5d-0f88-978a" name="Lost Soldier" hidden="false" typeId="5b1b-0173-18b5-59ad" typeName="Unit">
-          <characteristics>
-            <characteristic name="M" typeId="2cbe-15bb-206a-c3e2">5&quot;</characteristic>
-            <characteristic name="CT" typeId="6b8c-6fa4-85b1-e51b">3+</characteristic>
-            <characteristic name="CC" typeId="74c7-849d-8110-24ac">4</characteristic>
-            <characteristic name="E" typeId="3882-bfe3-2a59-2952">4</characteristic>
-            <characteristic name="F" typeId="21ee-fc5d-a525-34aa">4</characteristic>
-            <characteristic name="PV" typeId="3553-346c-66bd-156f">2</characteristic>
-            <characteristic name="A" typeId="5fdd-960b-0516-72f5">3+ / 5++</characteristic>
-            <characteristic name="O" typeId="91bd-657f-7803-f974">7+</characteristic>
-            <characteristic name="Rules" typeId="e1f5-8606-d323-7037"/>
-          </characteristics>
-        </profile>
-      </profiles>
-      <selectionEntryGroups>
-        <selectionEntryGroup id="c259-b8ef-cedb-c6a6" name="New SelectionEntryGroup" hidden="false" collective="false" import="true" defaultSelectionEntryId="dc31-084d-1d04-70a8">
-          <entryLinks>
-            <entryLink id="9f7c-2a9d-0771-0d4f" name="Warp Flammer" hidden="false" collective="false" import="true" targetId="b901-5b4e-f1fd-199f" type="selectionEntry"/>
-            <entryLink id="dc31-084d-1d04-70a8" name="Warp Gun" hidden="false" collective="false" import="true" targetId="b56a-e469-0980-ab3c" type="selectionEntry"/>
-          </entryLinks>
-        </selectionEntryGroup>
-      </selectionEntryGroups>
+    <selectionEntry id="f5f0-b374-eb38-5684" name="Lost Soldier (Gun)" hidden="false" collective="false" import="true" type="model">
+      <infoLinks>
+        <infoLink id="7e14-e54f-f6bc-da76" name="Lost Soldier" hidden="false" targetId="1975-00e8-a557-d16f" type="profile"/>
+      </infoLinks>
+      <entryLinks>
+        <entryLink id="7005-40b2-c868-fccc" name="Warp Gun" hidden="false" collective="true" import="true" targetId="b56a-e469-0980-ab3c" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c42a-850d-2fea-1610" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d5b8-fd42-2e3e-a66f" type="min"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
       <costs>
         <cost name="pts" typeId="51b2-306e-1021-d207" value="25.0"/>
       </costs>
@@ -86,7 +366,7 @@ Un fois par tour, Vous pouvez relancer jusqu’à 3 sauvegardes ratées contre u
     </selectionEntry>
     <selectionEntry id="ceba-1834-4822-61b7" name="Lost Soldier (Sergent)" hidden="false" collective="false" import="true" type="model">
       <profiles>
-        <profile id="cd3e-dad1-72ae-bef9" name="Lost Soldier" hidden="false" typeId="5b1b-0173-18b5-59ad" typeName="Unit">
+        <profile id="cd3e-dad1-72ae-bef9" name="Lost Soldier (Sergent)" hidden="false" typeId="5b1b-0173-18b5-59ad" typeName="Unit">
           <characteristics>
             <characteristic name="M" typeId="2cbe-15bb-206a-c3e2">5&quot;</characteristic>
             <characteristic name="CT" typeId="6b8c-6fa4-85b1-e51b">3+</characteristic>
@@ -94,14 +374,21 @@ Un fois par tour, Vous pouvez relancer jusqu’à 3 sauvegardes ratées contre u
             <characteristic name="E" typeId="3882-bfe3-2a59-2952">4</characteristic>
             <characteristic name="F" typeId="21ee-fc5d-a525-34aa">4</characteristic>
             <characteristic name="PV" typeId="3553-346c-66bd-156f">2</characteristic>
-            <characteristic name="A" typeId="5fdd-960b-0516-72f5">3+ / 5++</characteristic>
+            <characteristic name="A" typeId="5fdd-960b-0516-72f5">3+</characteristic>
             <characteristic name="O" typeId="91bd-657f-7803-f974">7+</characteristic>
-            <characteristic name="Rules" typeId="e1f5-8606-d323-7037"/>
+            <characteristic name="Rules" typeId="e1f5-8606-d323-7037">psycker(1), ritual(1)</characteristic>
           </characteristics>
         </profile>
       </profiles>
+      <infoLinks>
+        <infoLink id="aebb-ec3a-f025-470d" name="Spells" hidden="false" targetId="a78f-6f3d-8fde-af6d" type="infoGroup"/>
+      </infoLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup id="b7c8-80e0-ae35-9a22" name="New SelectionEntryGroup" hidden="false" collective="false" import="true">
+        <selectionEntryGroup id="b7c8-80e0-ae35-9a22" name="New SelectionEntryGroup" hidden="false" collective="false" import="true" defaultSelectionEntryId="c873-d4c4-16ad-4eac">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="100b-475d-0a79-b08d" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="dab2-f516-69c5-587b" type="max"/>
+          </constraints>
           <entryLinks>
             <entryLink id="9bb2-4c1c-ab37-f485" name="Warp Flammer" hidden="false" collective="false" import="true" targetId="b901-5b4e-f1fd-199f" type="selectionEntry"/>
             <entryLink id="c873-d4c4-16ad-4eac" name="Warp Gun" hidden="false" collective="false" import="true" targetId="b56a-e469-0980-ab3c" type="selectionEntry"/>
@@ -122,7 +409,7 @@ Un fois par tour, Vous pouvez relancer jusqu’à 3 sauvegardes ratées contre u
         <profile id="c12f-7452-bfe7-795e" name="Warp Staff (Melee)" hidden="false" typeId="2a01-d90d-ecfb-1131" typeName="Melee Weapons">
           <characteristics>
             <characteristic name="Range" typeId="c624-6d19-f433-14a8"/>
-            <characteristic name="A" typeId="a8ee-fc72-899f-b4ce">4</characteristic>
+            <characteristic name="A" typeId="a8ee-fc72-899f-b4ce">3</characteristic>
             <characteristic name="S" typeId="13f1-d2d2-1cb0-ddc3">+1</characteristic>
             <characteristic name="PA" typeId="ab31-bafb-482f-18f0">2</characteristic>
             <characteristic name="D" typeId="08b5-ec3a-ebe3-96f0">1</characteristic>
@@ -131,15 +418,20 @@ Un fois par tour, Vous pouvez relancer jusqu’à 3 sauvegardes ratées contre u
         </profile>
         <profile id="cc5c-9f0d-bbe7-c155" name="Warp Staff (Range)" hidden="false" typeId="9dca-df4d-90ea-88cb" typeName="Ranged Weapons">
           <characteristics>
-            <characteristic name="Range" typeId="5db7-a574-7d62-7037">12&quot;</characteristic>
+            <characteristic name="Range" typeId="5db7-a574-7d62-7037">16&quot;</characteristic>
             <characteristic name="A" typeId="ae6d-f386-4c1f-d2c8">1</characteristic>
-            <characteristic name="S" typeId="3a26-54c6-47d7-3299"/>
-            <characteristic name="PA" typeId="a68d-f417-7582-813a"/>
-            <characteristic name="D" typeId="3243-eb64-8d41-ece1"/>
-            <characteristic name="Keywords" typeId="3655-2fd8-5ed0-9577">Blast</characteristic>
+            <characteristic name="S" typeId="3a26-54c6-47d7-3299">5</characteristic>
+            <characteristic name="PA" typeId="a68d-f417-7582-813a">1</characteristic>
+            <characteristic name="D" typeId="3243-eb64-8d41-ece1">1</characteristic>
+            <characteristic name="Keywords" typeId="3655-2fd8-5ed0-9577">Blast, Heavy, Warp Precision</characteristic>
           </characteristics>
         </profile>
       </profiles>
+      <rules>
+        <rule id="209c-7bac-bdb3-0f3e" name="Warp Precision" hidden="false">
+          <description>Warp Precision:  Can use 1 psychick token and so ignore blast deviation</description>
+        </rule>
+      </rules>
       <infoLinks>
         <infoLink id="151c-8865-bd3a-fb9e" name="Blast" hidden="false" targetId="05bc-7a01-b0a7-4615" type="rule"/>
       </infoLinks>
@@ -157,6 +449,238 @@ Un fois par tour, Vous pouvez relancer jusqu’à 3 sauvegardes ratées contre u
           </characteristics>
         </profile>
       </profiles>
+      <infoLinks>
+        <infoLink id="a83e-87bc-0902-8bbb" name="Heavy" hidden="false" targetId="2aac-85b1-693c-6618" type="rule"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry id="3fc2-0d4a-7b1e-0209" name="Warp Shield" hidden="false" collective="false" import="true" type="upgrade">
+      <rules>
+        <rule id="63c6-e871-b73d-3b19" name="Warp Shield" hidden="false">
+          <description>Unit gain 5++ Save</description>
+        </rule>
+      </rules>
+    </selectionEntry>
+    <selectionEntry id="5c3d-c069-39a4-f89d" name="Warp Icon" hidden="false" collective="false" import="true" type="upgrade">
+      <rules>
+        <rule id="698e-fc62-e222-9958" name="Warp Icon" hidden="false">
+          <description>Phase de commandement:
+Si à 6&quot; d&apos;un objectif, génère 1 token psychique</description>
+        </rule>
+      </rules>
+    </selectionEntry>
+    <selectionEntry id="d802-d7cc-431b-89f4" name="Warp mutation" hidden="false" collective="false" import="true" type="upgrade">
+      <rules>
+        <rule id="acf0-6f80-e07c-a31c" name="Warp mutation" hidden="false">
+          <description>Au début du 1er tour, lancer 1D6:
+
+1: l&apos;unité gagne 2&quot; de mouvement
+2: l&apos;unité gagne 1F
+3: l&apos;unité gagne 1E
+4: l&apos;unité peut effectuer un déplacement gratuit
+5: les figurines de l&apos;unité compte double pour la capture d&apos;objectif
+6: choisissez le bonus</description>
+        </rule>
+      </rules>
+    </selectionEntry>
+    <selectionEntry id="9c53-fd58-1113-64d1" name="Warp grenade" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="6f1e-31c5-67af-977c" name="Warp grenade" hidden="false" typeId="9dca-df4d-90ea-88cb" typeName="Ranged Weapons">
+          <characteristics>
+            <characteristic name="Range" typeId="5db7-a574-7d62-7037">6&quot;</characteristic>
+            <characteristic name="A" typeId="ae6d-f386-4c1f-d2c8">1</characteristic>
+            <characteristic name="S" typeId="3a26-54c6-47d7-3299">5</characteristic>
+            <characteristic name="PA" typeId="a68d-f417-7582-813a">2</characteristic>
+            <characteristic name="D" typeId="3243-eb64-8d41-ece1">1</characteristic>
+            <characteristic name="Keywords" typeId="3655-2fd8-5ed0-9577">blast</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry id="942c-3d46-7a0d-652a" name="Lost Soldier (Flammer)" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="6e3d-f5ae-b46e-465c" name="Lost Soldier" hidden="false" targetId="1975-00e8-a557-d16f" type="profile"/>
+      </infoLinks>
+      <entryLinks>
+        <entryLink id="99cc-c584-2faa-4d75" name="Warp Flammer" hidden="false" collective="false" import="true" targetId="b901-5b4e-f1fd-199f" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6781-27aa-03b3-ec99" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="33d3-d622-a363-b995" type="min"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="40.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="586a-472f-3552-7427" name="Lost Soldier (Heavy)" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="aa54-3e30-cf9c-f9d5" name="Lost Soldier" hidden="false" targetId="1975-00e8-a557-d16f" type="profile"/>
+      </infoLinks>
+      <entryLinks>
+        <entryLink id="7d37-a836-c166-b9fe" name="Heavy Warp Gun" hidden="false" collective="false" import="true" targetId="ddea-fe2f-1258-c0ed" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6ee9-5150-7a2f-5972" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a283-dc75-d48d-85c4" type="min"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="25.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="da1d-bf1f-58ac-5bcb" name="Warp Pistol" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="77b7-75ac-3f16-d388" name="Warp Pistol" hidden="false" typeId="9dca-df4d-90ea-88cb" typeName="Ranged Weapons">
+          <characteristics>
+            <characteristic name="Range" typeId="5db7-a574-7d62-7037">12&quot;</characteristic>
+            <characteristic name="A" typeId="ae6d-f386-4c1f-d2c8">1</characteristic>
+            <characteristic name="S" typeId="3a26-54c6-47d7-3299">4</characteristic>
+            <characteristic name="PA" typeId="a68d-f417-7582-813a">1</characteristic>
+            <characteristic name="D" typeId="3243-eb64-8d41-ece1"/>
+            <characteristic name="Keywords" typeId="3655-2fd8-5ed0-9577">pistol</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry id="3c19-6453-f8cb-c5f4" name="Warp Sword" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="96df-299d-fd3d-3783" name="Warp Sword" hidden="false" typeId="2a01-d90d-ecfb-1131" typeName="Melee Weapons">
+          <characteristics>
+            <characteristic name="Range" typeId="c624-6d19-f433-14a8"/>
+            <characteristic name="A" typeId="a8ee-fc72-899f-b4ce">6</characteristic>
+            <characteristic name="S" typeId="13f1-d2d2-1cb0-ddc3"/>
+            <characteristic name="PA" typeId="ab31-bafb-482f-18f0">1</characteristic>
+            <characteristic name="D" typeId="08b5-ec3a-ebe3-96f0">1</characteristic>
+            <characteristic name="Keywords" typeId="abd1-26cd-f140-5eab">Warp guidance</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="a109-cdb4-cc4e-ea58" name="Warp Sword" hidden="false">
+          <description>Warp guidance: Can use 1 psychick token and get +2 CC on melee attack</description>
+        </rule>
+      </rules>
     </selectionEntry>
   </sharedSelectionEntries>
+  <sharedRules>
+    <rule id="4bc8-da57-1ca2-1c10" name="Ritual(X)" hidden="false"/>
+  </sharedRules>
+  <sharedProfiles>
+    <profile id="1975-00e8-a557-d16f" name="Lost Soldier" hidden="false" typeId="5b1b-0173-18b5-59ad" typeName="Unit">
+      <characteristics>
+        <characteristic name="M" typeId="2cbe-15bb-206a-c3e2">5&quot;</characteristic>
+        <characteristic name="CT" typeId="6b8c-6fa4-85b1-e51b">3+</characteristic>
+        <characteristic name="CC" typeId="74c7-849d-8110-24ac">4</characteristic>
+        <characteristic name="E" typeId="3882-bfe3-2a59-2952">4</characteristic>
+        <characteristic name="F" typeId="21ee-fc5d-a525-34aa">4</characteristic>
+        <characteristic name="PV" typeId="3553-346c-66bd-156f">2</characteristic>
+        <characteristic name="A" typeId="5fdd-960b-0516-72f5">3+</characteristic>
+        <characteristic name="O" typeId="91bd-657f-7803-f974">7+</characteristic>
+        <characteristic name="Rules" typeId="e1f5-8606-d323-7037"/>
+      </characteristics>
+    </profile>
+  </sharedProfiles>
+  <sharedInfoGroups>
+    <infoGroup id="a78f-6f3d-8fde-af6d" name="Spells" hidden="false">
+      <profiles>
+        <profile id="bd9f-bbf1-ffb6-2f99" name="Frappe psychique" hidden="false" typeId="db6c-7307-8d0d-12fd" typeName="Spell">
+          <characteristics>
+            <characteristic name="Power" typeId="2e8c-8e70-d72a-bf53">7+</characteristic>
+            <characteristic name="Range" typeId="1a6e-7d90-3d84-7f95">12&quot;</characteristic>
+            <characteristic name="Effect" typeId="e0f0-f582-a23c-dcfa">L’unité perd 2PV, sur un lancé de 8+ elle perd D3+1 PV</characteristic>
+            <characteristic name="Target" typeId="c9c6-a195-3c77-0cc0">1 unité ennemi la plus proche</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="20ba-8cc8-12ce-0e57" name="Malédiction des ténèbres" hidden="false" typeId="db6c-7307-8d0d-12fd" typeName="Spell">
+          <characteristics>
+            <characteristic name="Power" typeId="2e8c-8e70-d72a-bf53">8+</characteristic>
+            <characteristic name="Range" typeId="1a6e-7d90-3d84-7f95">24&quot;</characteristic>
+            <characteristic name="Effect" typeId="e0f0-f582-a23c-dcfa">La cible retire 1 à ses jets de touche jusqu’à la fin du tour</characteristic>
+            <characteristic name="Target" typeId="c9c6-a195-3c77-0cc0">Un ennemi</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="52f0-ba8b-d81b-ace1" name="Bolt astral" hidden="false" typeId="db6c-7307-8d0d-12fd" typeName="Spell">
+          <characteristics>
+            <characteristic name="Power" typeId="2e8c-8e70-d72a-bf53">9+</characteristic>
+            <characteristic name="Range" typeId="1a6e-7d90-3d84-7f95">12&quot;</characteristic>
+            <characteristic name="Effect" typeId="e0f0-f582-a23c-dcfa">Jetez 1D6 pour chaque point de puissance du score lancé. Sur un 5+ l’unité ennemi doit effectuer un jet de sauvegarde</characteristic>
+            <characteristic name="Target" typeId="c9c6-a195-3c77-0cc0">1 unité ennemi</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="7d17-76b5-db4e-9078" name="Tremblement du warp" hidden="false" typeId="db6c-7307-8d0d-12fd" typeName="Spell">
+          <characteristics>
+            <characteristic name="Power" typeId="2e8c-8e70-d72a-bf53">6+</characteristic>
+            <characteristic name="Range" typeId="1a6e-7d90-3d84-7f95">24&quot;</characteristic>
+            <characteristic name="Effect" typeId="e0f0-f582-a23c-dcfa">La cible effectue un test classique de pilonnage, en cas de réussite elle réduit son mouvement de moitié</characteristic>
+            <characteristic name="Target" typeId="c9c6-a195-3c77-0cc0">Un ennemi infanterie</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="c4b7-e907-c52f-2961" name="Echange astral" hidden="false" typeId="db6c-7307-8d0d-12fd" typeName="Spell">
+          <characteristics>
+            <characteristic name="Power" typeId="2e8c-8e70-d72a-bf53">9+</characteristic>
+            <characteristic name="Range" typeId="1a6e-7d90-3d84-7f95">24&quot;</characteristic>
+            <characteristic name="Effect" typeId="e0f0-f582-a23c-dcfa">Intervertissez les 2 personnages</characteristic>
+            <characteristic name="Target" typeId="c9c6-a195-3c77-0cc0">2 personnages alliés à porté</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="11f5-4a7d-fd92-81e8" name="Tir psychique" hidden="false" typeId="db6c-7307-8d0d-12fd" typeName="Spell">
+          <characteristics>
+            <characteristic name="Power" typeId="2e8c-8e70-d72a-bf53">7+</characteristic>
+            <characteristic name="Range" typeId="1a6e-7d90-3d84-7f95">12&quot;</characteristic>
+            <characteristic name="Effect" typeId="e0f0-f582-a23c-dcfa">Cette unité peut tirer avec ses armes en ignorant les lignes de vue</characteristic>
+            <characteristic name="Target" typeId="c9c6-a195-3c77-0cc0">une unité allié</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="162d-940a-096d-5cee" name="Echo temporel" hidden="false" typeId="db6c-7307-8d0d-12fd" typeName="Spell">
+          <characteristics>
+            <characteristic name="Power" typeId="2e8c-8e70-d72a-bf53">8+</characteristic>
+            <characteristic name="Range" typeId="1a6e-7d90-3d84-7f95">6&quot;</characteristic>
+            <characteristic name="Effect" typeId="e0f0-f582-a23c-dcfa">1 unité alliée infanterie ou démon non engagée</characteristic>
+            <characteristic name="Target" typeId="c9c6-a195-3c77-0cc0">Cette unité peut effectuer immédiatement un déplacement gratuit </characteristic>
+          </characteristics>
+        </profile>
+        <profile id="fbe9-7c9e-418a-7200" name="Maîtrise du destin" hidden="false" typeId="db6c-7307-8d0d-12fd" typeName="Spell">
+          <characteristics>
+            <characteristic name="Power" typeId="2e8c-8e70-d72a-bf53">6+</characteristic>
+            <characteristic name="Range" typeId="1a6e-7d90-3d84-7f95"/>
+            <characteristic name="Effect" typeId="e0f0-f582-a23c-dcfa">Lancer un D6, à n’importe quel lancé de dé durant ce tour, vous pouvez remplacer la valeur d’un D6 par celui-ci</characteristic>
+            <characteristic name="Target" typeId="c9c6-a195-3c77-0cc0"/>
+          </characteristics>
+        </profile>
+        <profile id="2c9e-ed2c-47e7-fad6" name="Bouclier warp" hidden="false" typeId="db6c-7307-8d0d-12fd" typeName="Spell">
+          <characteristics>
+            <characteristic name="Power" typeId="2e8c-8e70-d72a-bf53">8+</characteristic>
+            <characteristic name="Range" typeId="1a6e-7d90-3d84-7f95">12&quot;</characteristic>
+            <characteristic name="Effect" typeId="e0f0-f582-a23c-dcfa">La cible gagne une armure invulnérable de 4++ jusqu’à la fin du tour</characteristic>
+            <characteristic name="Target" typeId="c9c6-a195-3c77-0cc0">Un allié Lost Children</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="acf0-1ec5-9a90-8225" name="Miroir de l’abysse" hidden="false" typeId="db6c-7307-8d0d-12fd" typeName="Spell">
+          <characteristics>
+            <characteristic name="Power" typeId="2e8c-8e70-d72a-bf53">8+</characteristic>
+            <characteristic name="Range" typeId="1a6e-7d90-3d84-7f95">12&quot;</characteristic>
+            <characteristic name="Effect" typeId="e0f0-f582-a23c-dcfa">Lorsque cette unité se fait attaquer par une attaque de tir durant ce tour, pour chaque blessé de 1, l’attaquant subit l’attaque à la place (il est considéré alors comme déjà blessé)</characteristic>
+            <characteristic name="Target" typeId="c9c6-a195-3c77-0cc0">une unité allié</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="6ecf-a6d3-4552-cf8d" name="Malédiction d’ignorance" hidden="false" typeId="db6c-7307-8d0d-12fd" typeName="Spell">
+          <characteristics>
+            <characteristic name="Power" typeId="2e8c-8e70-d72a-bf53">6+</characteristic>
+            <characteristic name="Range" typeId="1a6e-7d90-3d84-7f95">18&quot;</characteristic>
+            <characteristic name="Effect" typeId="e0f0-f582-a23c-dcfa">La cible perd 2 d’organisation jusqu&apos;à la fin prochaine activation</characteristic>
+            <characteristic name="Target" typeId="c9c6-a195-3c77-0cc0">Un ennemi</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="4928-3a39-e352-e0b1" name="Invocation" hidden="false" typeId="db6c-7307-8d0d-12fd" typeName="Spell">
+          <characteristics>
+            <characteristic name="Power" typeId="2e8c-8e70-d72a-bf53">5+</characteristic>
+            <characteristic name="Range" typeId="1a6e-7d90-3d84-7f95">6&quot;</characteristic>
+            <characteristic name="Effect" typeId="e0f0-f582-a23c-dcfa">Une fois par bataille
+Invoquer une unité démon en cohésion à l’emplacement ciblé</characteristic>
+            <characteristic name="Target" typeId="c9c6-a195-3c77-0cc0">Un emplacement disponible sur le terrain à 9” de tout ennemi</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </infoGroup>
+  </sharedInfoGroups>
 </catalogue>
